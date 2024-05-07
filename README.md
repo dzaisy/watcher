@@ -1,2 +1,2 @@
 # watcher
-// to run react, cd into watchflix then run 'npm start'
+// to run react, cd into watchflix, run 'npm install' then run 'npm start'
