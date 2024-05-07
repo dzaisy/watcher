@@ -1,0 +1,150 @@
+{
+    "movies": [
+      {
+        "id": 1,
+        "name": "Snowfall",
+        "genre": "Crime Fiction, Mystery",
+        "description": "During the budding drug epidemic in Los Angeles in the early 1980s, a crime family decides to make money selling cocaine. Meanwhile, a CIA operative also gets involved.",
+        "image": "https://image.tmdb.org/t/p/original/y7ntzl7msiaS6o7dvDbNG7XFYcR.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Fifty Shades of Grey",
+        "genre": "Romance",
+        "description": "Fifty Shades is a British-American film trilogy series based on the Fifty Shades trilogy by English author E. L. James. It is distributed by Universal Studios, and stars Dakota Johnson and Jamie Dornan as the lead roles Anastasia Steele and Christian Grey, respectively.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/73/Fifty_Shades_of_Grey_poster.jpg"
+      },
+      {
+        "id": 3,
+        "name": "The Shawshank Redemption",
+        "genre": "Drama",
+        "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
+        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KBwRKCB9g4O0ojNzYC1uvw.jpeg"
+      },
+      {
+        "id": 4,
+        "name": "Pulp Fiction",
+        "genre": "Crime, Drama",
+        "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
+        "image": "https://images.cdn.prd.api.discomax.com/2023/06/29/44fbd1b4-f4c9-37f8-ab47-e70a52519b56.jpeg?f=jpg&q=75&w=1280&w=1200"
+      },
+      {
+        "id": 5,
+        "name": "The Dark Knight",
+        "genre": "Action, Crime, Drama",
+        "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
+        "image": "https://www.pluggedin.com/wp-content/uploads/2019/12/the-dark-knight-1024x576.jpg"
+      },
+      {
+        "id": 6,
+        "name": "Forrest Gump",
+        "genre": "Drama, Romance",
+        "description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
+        "image": "https://shop-cdn.bfi.org.uk/media/catalog/product/cache/4088ca07390e11598713fc5e2ff6ef9d/f/o/forrest_gump_1.png"
+      },
+      {
+        "id": 7,
+        "name": "The Matrix",
+        "genre": "Action, Sci-Fi",
+        "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/9/9a/The_Matrix_soundtrack_cover.jpg/220px-The_Matrix_soundtrack_cover.jpg"
+      },
+      {
+        "id": 8,
+        "name": "Schindler's List",
+        "genre": "Biography, Drama, History",
+        "description": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
+        "image": "https://northhowler.com/wp-content/uploads/2021/12/p15227_p_v13_be-675x900.jpg"
+      },
+      {
+        "id": 9,
+        "name": "The Lord of the Rings: The Return of the King",
+        "genre": "Action, Adventure, Drama",
+        "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/4/40/Rotkboxart2.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Fight Club",
+        "genre": "Drama",
+        "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg"
+      }
+    ],
+  
+    "series": [
+      {
+        "id": 1,
+        "name": "Fallout",
+        "genre": "Action, Drama, Thriller",
+        "description": "In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.",
+        "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/04/lucy-exiting-vault-33-in-fallout.jpeg?q=70&fit=contain&w=1140&h=&dpr=1"
+      },
+      {
+        "id": 2,
+        "name": "Outlander",
+        "genre": "Romance",
+        "description": "After the Second World War, Claire Beauchamp Randall enjoys a second honeymoon in Scotland with her husband. However, she is transported to a mysterious world where she meets warrior Jamie Fraser.",
+        "image": "https://pics.filmaffinity.com/outlander-447717145-large.jpg"
+      },
+      {
+        "id": 3,
+        "name": "The Gentlemen",
+        "genre": "Comedy",
+        "description": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire, and its proprietors aren't going anywhere.",
+        "image": "https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQbkn93mIsQb1_NaLO9s7o6FokiWT3keLiqJyW2fpOPsnj_I8qW8xATLRm2BheiwtTZQhdtA9VoN4vH5MLlgCjGDGVnmR6Sbq1ivftkPFQ83ltmzUKJhbvSeHOP0ASanoPt_y2evkdfrPJJcZJ_MDfTi9.jpg?r=da0"
+      },
+      {
+        "id": 4,
+        "name": "A Man in Full",
+        "genre": "Drama",
+        "description": "When real estate mogul Charlie Croker faces bankruptcy, political and business interests collide, as he defends his empire from those attempting to capitalize on his fall from grace.",
+        "image": "https://outloudculture.com/wp-content/uploads/2024/03/AAAABYmcJMUE8sAoUDCW3YIMfO5yOOWUpSwauz2PCT9E-V47wnjjYSEXU0BY8KiQYD7ca8x2qdB5DSIdljYjlkWjm6jStAZpVyRdJUetumrSrOehts-9yVAANZHxfjUNbF9j_2nHUA.webp"
+      },
+      {
+        "id": 5,
+        "name": "Fiasco",
+        "genre": "Comedy, Drama",
+        "description": "Raphaël Valande begins shooting his first feature film as a tribute to the heroic life of his grandmother, a member of the French Resistance. But filming gradually turns into a nightmare, as someone on the crew is trying to sabotage his film.",
+        "image": "https://resizing.flixster.com/KF0ELu4Z_H8dMIHOmHGictnEYw4=/206x305/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p26955039_b_v13_aa.jpg"
+      },
+      {
+        "id": 6,
+        "name": "The Signal",
+        "genre": "Action, Sci-Fi",
+        "description": "A missing astronaut's family frantically searches for answers, but the more they uncover, the more the threat grows to them, and the world.",
+        "image": "https://www.heavenofhorror.com/wp-content/uploads/2024/03/the-signal-2024-netflix-series-1.jpg"
+      },
+      {
+        "id": 7,
+        "name": "Stranger Things",
+        "genre": "Drama, Fantasy, Horror",
+        "description": "In a small town where everyone knows everyone, a group of kids discovers a strange girl who claims to be from a parallel dimension.",
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/220px-Stranger_Things_logo.png"
+      },
+      {
+        "id": 8,
+        "name": "Friends",
+        "genre": "Comedy, Romance",
+        "description": "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
+        "image": "http://images1.resources.foxtel.com.au/store2/mount1/16/3/85td8.jpg"
+      },
+      {
+        "id": 9,
+        "name": "The Office (US)",
+        "genre": "Comedy",
+        "description": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.",
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/24/TheOfficeUSSeason3Cover.jpg"
+      },
+      {
+        "id": 10,
+        "name": "Breaking Bad: Better Call Saul",
+        "genre": "Crime, Drama",
+        "description": "The trials and tribulations of criminal lawyer Jimmy McGill in the time before he established his strip-mall law office in Albuquerque, New Mexico.",
+        "image": "https://static.tvtropes.org/pmwiki/pub/images/screenshot_2023_08_30_at_16_21_31_ems_3jpg_webp_image_1400_2100_pixels_scaled_35.png"
+      }
+    ]
+  }
+  
+  
+  
