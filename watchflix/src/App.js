@@ -1,5 +1,6 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
+import Authentication from './components/Authentication';
 
 function App() {
   const [movies, setMovies] = useState([])
@@ -20,11 +21,13 @@ function App() {
     <div className="App">
       <header className="App-header">
         <nav className="navbar">
+      
           <div className="logo">Watchflix</div>
           <div className="search-bar">
             <input type="text" placeholder="Search..." />
             <button type="button">Search</button>
           </div>
+          <div className="login">Login</div>
           <div className="filter">Filter</div>
           <div className="profile">Profile</div>
           <div className="watchlist">Watchlist</div>
@@ -57,6 +60,7 @@ function App() {
           ))}
         </div>
       </div>
+      <Authentication />
     </div>
 
   );
