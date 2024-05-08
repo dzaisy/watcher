@@ -1,33 +1,20 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
-import axios from 'axios';
-import Collection from './components/Collection';
 
 function App() {
   const [movies, setMovies] = useState([])
   const [series, setSeries] = useState([])
 
   useEffect(() => {
-    axios
-    .get('http://localhost:3000/movies')
-    .then(res => {
-      setMovies(res.data.movies)
-    })
-    .catch(error => {
-      console.error('error fetching data', error)
-    })
+    fetch('http://localhost:3000/movies')
+      .then(response => response.json())
+      .then(data => setMovies(data));
+
+    fetch('http://localhost:3000/series')
+      .then(response => response.json())
+      .then(data => setSeries(data));
   }, []);
 
-  useEffect(() => {
-    axios
-    .get('http://localhost:3000/series')
-    .then(res => {
-      setSeries(res.data.series)
-    })
-    .catch(error => {
-      console.error('error fetching data', error)
-    })
-  }, []);
 
   return (
     <div className="App">
@@ -38,12 +25,40 @@ function App() {
             <input type="text" placeholder="Search..." />
             <button type="button">Search</button>
           </div>
-          <div className="profile">Profile</div>
           <div className="filter">Filter</div>
+          <div className="profile">Profile</div>
+          <div className="watchlist">Watchlist</div>
         </nav>
       </header>
-      <Collection movies={movies} series={series} />
+      <div className="content">
+        <div className="grid-container">
+          {movies.map(movie => (
+            <div key={movie.id} className="card">
+              <img src={movie.image} alt={movie.name} />
+              <div className="card-info">
+                <h2>{movie.name}</h2>
+                <p className="genre">{movie.genre}</p>
+                <p>{movie.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="grid-container">
+          {series.map(serie => (
+            <div key={serie.id} className="card">
+              <img src={serie.image} alt={serie.name} />
+              <div className="card-info">
+                <h2>{serie.name}</h2>
+                <p className="genre">{serie.genre}</p>
+                <p>{serie.description}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
+
   );
 }
 
