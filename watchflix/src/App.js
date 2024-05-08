@@ -32,9 +32,17 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>watchflix</h1>
+        <nav className="navbar">
+          <div className="logo">Watchflix</div>
+          <div className="search-bar">
+            <input type="text" placeholder="Search..." />
+            <button type="button">Search</button>
+          </div>
+          <div className="profile">Profile</div>
+          <div className="filter">Filter</div>
+        </nav>
       </header>
-      <Collection movies={movies} series={series}/>
+      <Collection movies={movies} series={series} />
     </div>
   );
 }
