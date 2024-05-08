@@ -1,17 +1,20 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Authentication from './components/Authentication';
 import Like from './components/Like';
 
 function App() {
+
+  
+  const [showAuthentication, setShowAuthentication] = useState(false);
   const [movies, setMovies] = useState([])
   const [series, setSeries] = useState([])
   const [likedMovies, setLikedMovies] = useState([]);
   const [likedSeries, setLikedSeries] = useState([]);
-  const [watchList, setWatchList] = useState([]);
   const [renderLiked, setRenderLiked] = useState(false);
 
   
+
 
   useEffect(() => {
     fetch('http://localhost:3000/movies')
@@ -33,6 +36,7 @@ function App() {
       }
   }, []);
 
+
   function handleMovieLike(id) {
     const updatedLikedMovies = likedMovies.includes(id)
       ? likedMovies.filter(movieId => movieId !== id) // checks to see if id of the item is already liked
@@ -53,20 +57,22 @@ function App() {
     setRenderLiked(!renderLiked)
   }
 
+
   return (
     <div className="App">
       <header className="App-header">
         <nav className="navbar">
-      
           <div className="logo">Watchflix</div>
           <div className="search-bar">
             <input type="text" placeholder="Search..." />
             <button type="button">Search</button>
           </div>
-          <button className="login">Login</button>
+
+          <button className="login" onClick={() => setShowAuthentication(true)}>Login</button>
           <button className="filter">Filter</button>
           <button className="likes" onClick={handleLikeClick}>♥</button>
           <button className="watchlist">Watchlist</button>
+
         </nav>
       </header>
       <div className="content">
@@ -111,13 +117,14 @@ function App() {
           ))}
         </div>
       </div>
-      <Authentication />
+      {showAuthentication && <Authentication onClose={() => setShowAuthentication(false)} />}
     </div>
-
   );
 }
 
 export default App;
 
+
 // onClick={() => handleMovieLike(movie.id)} => sets up onclick and ensures that when btn is clicked function is called with the movie id. manages a/r from likes
 // style={{color: likedMovies.includes(movie.id) ? 'red' : 'white'}} sets btn style 
+
