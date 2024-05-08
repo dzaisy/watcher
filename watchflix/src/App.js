@@ -9,9 +9,19 @@ function App() {
 
   useEffect(() => {
     axios
-    .get('http://localhost:3000')
+    .get('http://localhost:3000/movies')
     .then(res => {
       setMovies(res.data.movies)
+    })
+    .catch(error => {
+      console.error('error fetching data', error)
+    })
+  }, []);
+
+  useEffect(() => {
+    axios
+    .get('http://localhost:3000/series')
+    .then(res => {
       setSeries(res.data.series)
     })
     .catch(error => {
@@ -31,4 +41,3 @@ function App() {
 
 export default App;
 
-// noel
