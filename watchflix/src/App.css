@@ -45,7 +45,7 @@
   font-size: 16px;
 }
 
-.filter, .profile, .watchlist {
+.filter, .profile, .watchlist, .login {
   padding: 8px 16px;
   border-radius: 20px;
   cursor: pointer;
