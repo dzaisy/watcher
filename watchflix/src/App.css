@@ -59,8 +59,8 @@
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, minmax(200px, 1fr));
-  grid-gap: 30px; /* Increase the gap between cards */
+  grid-template-columns: repeat(6, minmax(200px, 6fr));
+  grid-gap: 0px; /* Increase the gap between cards */
   padding: 20px; /* Add padding to the container */
 }
 

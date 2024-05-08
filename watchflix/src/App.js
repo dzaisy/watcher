@@ -104,8 +104,7 @@ function App() {
                 <p className="genre">{serie.genre}</p>
                 <p>{serie.description}</p>
                 <div className="card-button">
-                  <button className="like-btn" onClick={() => handleSeriesLike(serie.id)} style={{color: likedSeries.includes(serie.id) ? 'red' : 'white'}}>♥</button>
-                  <button className="wtchl-btn">+</button>
+                  <button className="like-btn" onClick={() => handleSeriesLike(serie.id)} style={{color: likedSeries.includes(serie.id) ? 'red' : 'white'}}>♥</button>          
                 </div>
               </div>
             </div>
