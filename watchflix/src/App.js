@@ -39,6 +39,10 @@ function App() {
                 <h2>{movie.name}</h2>
                 <p className="genre">{movie.genre}</p>
                 <p>{movie.description}</p>
+                <div className="card-button">
+                  <button className="like-btn">♡</button>
+                  <button className="wtchl-btn">+</button>
+                </div>
               </div>
             </div>
           ))}
@@ -52,6 +56,10 @@ function App() {
                 <h2>{serie.name}</h2>
                 <p className="genre">{serie.genre}</p>
                 <p>{serie.description}</p>
+                <div className="card-button">
+                  <button className="like-btn">♡</button>
+                  <button className="wtchl-btn">+</button>
+                </div>
               </div>
             </div>
           ))}
