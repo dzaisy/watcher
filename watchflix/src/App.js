@@ -1,9 +1,11 @@
 import './App.css';
 import React, {useState, useEffect} from 'react';
+import Watchlist from './components/WatchList';
 
 function App() {
   const [movies, setMovies] = useState([])
   const [series, setSeries] = useState([])
+  const [watchlist, setWatchlist] = useState([]);
 
   useEffect(() => {
     fetch('http://localhost:3000/movies')
@@ -14,6 +16,17 @@ function App() {
       .then(response => response.json())
       .then(data => setSeries(data));
   }, []);
+  const addToWatchlist = (item) => {
+   
+    if (!watchlist.some(watchlistItem => watchlistItem.id === item.id)) {
+      setWatchlist(prevWatchlist => [...prevWatchlist, item]);
+    }
+  };
+
+  const removeFromWatchlist = (itemId) => {
+   
+    setWatchlist(prevWatchlist => prevWatchlist.filter(item => item.id !== itemId));
+  };
 
 
   return (
@@ -40,8 +53,11 @@ function App() {
                 <p className="genre">{movie.genre}</p>
                 <p>{movie.description}</p>
               </div>
+             
             </div>
+            
           ))}
+          
         </div>
 
         <div className="grid-container">
@@ -57,6 +73,9 @@ function App() {
           ))}
         </div>
       </div>
+      <Watchlist watchlist={watchlist} removeFromWatchlist={removeFromWatchlist} />
+
+
     </div>
 
   );
