@@ -64,11 +64,11 @@
 }
 
 .card {
-  border: 1px solid #ccc;
-  border-radius: 10px;
+  position: relative; /* Positioning context for buttons which are absolutely positioned */
+  border-radius: 15px;
   overflow: hidden;
   background-color: #7c0935;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.786);
   height: 400px; /* Set the height of the card containers */
 }
 
@@ -78,6 +78,7 @@
   border-radius: 10px;
   display: block;
   object-fit: cover; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.658);
 }
 
 .card-info {
@@ -93,10 +94,38 @@
 .card-info p {
   margin: 3px 0;
   color: #bbb;
-  font-size: small;
+  font-size:70%;
+  margin-bottom: 3px;
 }
 
 .card-info p.genre {
   margin-bottom: 5px; /* Add margin-bottom to create a gap */
 }
+
+.like-btn, .wtchl-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: transparent;
+  color: rgb(245, 248, 247);
+}
+
+.wtchl-btn {
+  font-size: 25px;
+}
+
+.card-button {
+  display: flex;
+  background-color: transparent;
+  justify-content: space-between;
+  margin-top: auto;
+  top: 0;
+  padding: 5px;
+  position: absolute;
+  width: 85%;
+  z-index: 1;
+}
+
+
+
 
