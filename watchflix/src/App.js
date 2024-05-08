@@ -1,10 +1,11 @@
 import './App.css';
-import React, {useState, useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
 import Authentication from './components/Authentication';
 
 function App() {
-  const [movies, setMovies] = useState([])
-  const [series, setSeries] = useState([])
+  const [movies, setMovies] = useState([]);
+  const [series, setSeries] = useState([]);
+  const [showAuthentication, setShowAuthentication] = useState(false);
 
   useEffect(() => {
     fetch('http://localhost:3000/movies')
@@ -16,18 +17,16 @@ function App() {
       .then(data => setSeries(data));
   }, []);
 
-
   return (
     <div className="App">
       <header className="App-header">
         <nav className="navbar">
-      
           <div className="logo">Watchflix</div>
           <div className="search-bar">
             <input type="text" placeholder="Search..." />
             <button type="button">Search</button>
           </div>
-          <div className="login">Login</div>
+          <div className="login" onClick={() => setShowAuthentication(true)}>Login</div>
           <div className="filter">Filter</div>
           <div className="profile">Profile</div>
           <div className="watchlist">Watchlist</div>
@@ -68,11 +67,9 @@ function App() {
           ))}
         </div>
       </div>
-      <Authentication />
+      {showAuthentication && <Authentication onClose={() => setShowAuthentication(false)} />}
     </div>
-
   );
 }
 
 export default App;
-
