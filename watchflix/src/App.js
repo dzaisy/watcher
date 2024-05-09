@@ -1,4 +1,13 @@
 import './App.css';
+
+import React, {useState, useEffect} from 'react';
+import Watchlist from './components/WatchList';
+
+function App() {
+  const [movies, setMovies] = useState([])
+  const [series, setSeries] = useState([])
+  const [watchlist, setWatchlist] = useState([]);
+
 import React, { useState, useEffect } from 'react';
 import Authentication from './components/Authentication';
 import Like from './components/Like';
@@ -10,6 +19,7 @@ function App() {
   const [likedMovies, setLikedMovies] = useState([]);
   const [likedSeries, setLikedSeries] = useState([]);
   const [renderLiked, setRenderLiked] = useState(false);
+
 
   useEffect(() => {
     fetch('http://localhost:3000/movies')
@@ -31,6 +41,17 @@ function App() {
       }
 
   }, []);
+  const addToWatchlist = (item) => {
+   
+    if (!watchlist.some(watchlistItem => watchlistItem.id === item.id)) {
+      setWatchlist(prevWatchlist => [...prevWatchlist, item]);
+    }
+  };
+
+  const removeFromWatchlist = (itemId) => {
+   
+    setWatchlist(prevWatchlist => prevWatchlist.filter(item => item.id !== itemId));
+  };
 
   function handleMovieLike(id) {
     const updatedLikedMovies = likedMovies.includes(id)
@@ -93,8 +114,11 @@ function App() {
                   <button className="wtchl-btn">+</button>
                 </div>
               </div>
+             
             </div>
+            
           ))}
+          
         </div>
 
         <div className="grid-container">
@@ -114,7 +138,13 @@ function App() {
           ))}
         </div>
       </div>
+
+      <Watchlist watchlist={watchlist} removeFromWatchlist={removeFromWatchlist} />
+
+
+
       {showAuthentication && <Authentication onClose={() => setShowAuthentication(false)} />}
+
     </div>
   );
 }
