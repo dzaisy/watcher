@@ -26,7 +26,7 @@ function Authentication({ onClose }) {
 
           <div className="input">
             <img src={email_icon} alt="" />
-            <input type="email" placeholder="Email Id" />
+            <input type="email" placeholder="Email Address" />
           </div>
 
           <div className="input">

@@ -21,7 +21,7 @@ function Like(props) {
             </li>
           ))}
         </ul>
-      </div>
+    </div>
   );
 }
 
