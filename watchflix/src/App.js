@@ -165,8 +165,5 @@ function App() {
 export default App;
 
 
-
 // onClick={() => handleMovieLike(movie.id)} => sets up onclick and ensures that when btn is clicked function is called with the movie id. manages a/r from likes
 // style={{color: likedMovies.includes(movie.id) ? 'red' : 'white'}} sets btn style 
-
-
