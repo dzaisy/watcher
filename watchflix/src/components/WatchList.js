@@ -1,30 +1,33 @@
-
-
 import React from 'react';
 
-function Watchlist({ watchlist, removeFromWatchlist }) {
+function WatchList(props) {
+  const { movieWatchlist, seriesWatchlist, handleMovieWatchlist, handleSeriesWatchlist } = props;
+  
   return (
-    <div className="watchlist">
-      <h2>Watchlist</h2>
-      <ul>
-       
-        {watchlist.map((item) => (
-          <li key={item.id}>
-            
-            <h3>{item.name}</h3>
-            <p className="genre">{item.genre}</p>
-            <p>{item.description}</p>
-           
-            <button onClick={() => removeFromWatchlist(item.id)}>Remove from Watchlist</button>
-          </li>
-        ))}
-      </ul>
+    <div className="watchlist-container">
+      <div className="watchlist" >
+        <div className="watchlist-dropdown">
+          <h2>Watchlist</h2>
+          <ul>
+            {movieWatchlist.map(name => (
+              <li key={name}>
+                Movie ID: {name}{''}
+                <button onClick={() => handleMovieWatchlist(name)}>x</button>
+              </li>
+            ))}
+          </ul>
+          <ul>
+            {seriesWatchlist.map(name => (
+              <li key={name}>
+                Series ID: {name}{''}
+                <button onClick={() => handleSeriesWatchlist(name)}>x</button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </div>
+
   );
 }
-
-export default Watchlist;
-
-
-
-
+export default WatchList;

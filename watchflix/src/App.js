@@ -1,16 +1,8 @@
 import './App.css';
-
-import React, {useState, useEffect} from 'react';
-import Watchlist from './components/WatchList';
-
-function App() {
-  const [movies, setMovies] = useState([])
-  const [series, setSeries] = useState([])
-  const [watchlist, setWatchlist] = useState([]);
-
 import React, { useState, useEffect } from 'react';
 import Authentication from './components/Authentication';
 import Like from './components/Like';
+import WatchList from './components/WatchList';
 
 function App() {
   const [showAuthentication, setShowAuthentication] = useState(false);
@@ -19,6 +11,9 @@ function App() {
   const [likedMovies, setLikedMovies] = useState([]);
   const [likedSeries, setLikedSeries] = useState([]);
   const [renderLiked, setRenderLiked] = useState(false);
+  const [seriesWatchlist, setSeriesWatchlist] = useState([]);
+  const [movieWatchlist, setMovieWatchlist] = useState([]);
+  const [renderWatchlist, setRenderWatchlist] = useState(false);
 
 
   useEffect(() => {
@@ -40,18 +35,18 @@ function App() {
         setLikedSeries(storedLikedSeries);
       }
 
-  }, []);
-  const addToWatchlist = (item) => {
-   
-    if (!watchlist.some(watchlistItem => watchlistItem.id === item.id)) {
-      setWatchlist(prevWatchlist => [...prevWatchlist, item]);
-    }
-  };
+      const storedMovieWatchlist = JSON.parse(localStorage.getItem('moviewatchlist'));
+      if (storedMovieWatchlist) {
+        setMovieWatchlist(storedMovieWatchlist);
+      }
 
-  const removeFromWatchlist = (itemId) => {
-   
-    setWatchlist(prevWatchlist => prevWatchlist.filter(item => item.id !== itemId));
-  };
+      const storedSeriesWatchlist = JSON.parse(localStorage.getItem('series'));
+      if (storedSeriesWatchlist) {
+        setLikedSeries(storedSeriesWatchlist);
+      }
+
+
+  }, []);
 
   function handleMovieLike(id) {
     const updatedLikedMovies = likedMovies.includes(id)
@@ -69,8 +64,28 @@ function App() {
     localStorage.setItem('likedSeries', JSON.stringify(updatedLikedSeries)); 
   }
 
+  function handleSeriesWatchlist(id) {
+    const updatedSeriesWatchlist = seriesWatchlist.includes(id)
+      ? seriesWatchlist.filter(seriesId => seriesId !== id)
+      : [...seriesWatchlist, id];
+    setSeriesWatchlist(updatedSeriesWatchlist);
+    localStorage.setItem('serieswatchlist', JSON.stringify(updatedSeriesWatchlist)); 
+  }
+
+  function handleMovieWatchlist(id) {
+    const updatedMovieWatchlist = movieWatchlist.includes(id)
+      ? movieWatchlist.filter(movieId => movieId !== id) 
+      : [...movieWatchlist, id];
+    setMovieWatchlist(updatedMovieWatchlist); 
+    localStorage.setItem('moviewatchlist', JSON.stringify(updatedMovieWatchlist)); 
+  }
+
   function handleLikeClick() {
     setRenderLiked(!renderLiked) // allows us to toggle btwn t & f
+  }
+
+  function handleWatchlistClick() {
+    setRenderWatchlist(!renderWatchlist)
   }
 
   return (
@@ -87,7 +102,7 @@ function App() {
           <button className="login" onClick={() => setShowAuthentication(true)}>Login</button>
           <button className="filter">Filter</button>
           <button className="likes" onClick={handleLikeClick}>♥</button>
-          <button className="watchlist">Watchlist</button>
+          <button className="watchlist" onClick={handleWatchlistClick}>Watchlist</button>
 
         </nav>
       </header>
@@ -100,7 +115,14 @@ function App() {
             handleSeriesLike={handleSeriesLike}
           />
         )}
-
+        {renderWatchlist && (
+          <WatchList 
+            movieWatchlist={movieWatchlist}
+            seriesWatchlist={seriesWatchlist}
+            handleMovieWatchlist={handleMovieWatchlist}
+            handleSeriesWatchlist={handleSeriesWatchlist}
+          />
+        )}
         <div className="grid-container">
           {movies.map(movie => (
             <div key={movie.id} className="card">
@@ -111,14 +133,11 @@ function App() {
                 <p>{movie.description}</p>
                 <div className="card-button">
                   <button className="like-btn" onClick={() => handleMovieLike(movie.id)} style={{color: likedMovies.includes(movie.id) ? 'red' : 'white'}}>♥</button>
-                  <button className="wtchl-btn">+</button>
+                  <button className="wtchl-btn" onClick={() => handleMovieWatchlist(movie.id)} style={{color: movieWatchlist.includes(movie.id) ? 'red' : 'white'}}>+</button>
                 </div>
               </div>
-             
             </div>
-            
           ))}
-          
         </div>
 
         <div className="grid-container">
@@ -131,25 +150,20 @@ function App() {
                 <p>{serie.description}</p>
                 <div className="card-button">
                   <button className="like-btn" onClick={() => handleSeriesLike(serie.id)} style={{color: likedSeries.includes(serie.id) ? 'red' : 'white'}}>♥</button>  
-                  <button className="wtchl-btn">+</button>        
+                  <button className="wtchl-btn" onClick={() => handleSeriesWatchlist(serie.id)} style={{color: seriesWatchlist.includes(serie.id) ? 'red' : 'white'}}>+</button>        
                 </div>
               </div>
             </div>
           ))}
         </div>
       </div>
-
-      <Watchlist watchlist={watchlist} removeFromWatchlist={removeFromWatchlist} />
-
-
-
       {showAuthentication && <Authentication onClose={() => setShowAuthentication(false)} />}
-
     </div>
   );
 }
 
 export default App;
+
 
 
 // onClick={() => handleMovieLike(movie.id)} => sets up onclick and ensures that when btn is clicked function is called with the movie id. manages a/r from likes
