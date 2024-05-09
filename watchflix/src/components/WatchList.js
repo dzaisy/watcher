@@ -1,4 +1,5 @@
 
+
 import React from 'react';
 
 function Watchlist({ watchlist, removeFromWatchlist }) {
@@ -23,6 +24,7 @@ function Watchlist({ watchlist, removeFromWatchlist }) {
 }
 
 export default Watchlist;
+
 
 
 
