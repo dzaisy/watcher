@@ -54,7 +54,11 @@
   border-radius: 15px;
   cursor: pointer;
   font-size: 15px;
-  margin-right: 7px;
+  margin-right: 10px;
+}
+
+.watchlist {
+  margin-right: 50px;
 }
 
 .content {
@@ -108,21 +112,12 @@
   margin-bottom: 5px; /* Add margin-bottom to create a gap */
 }
 
-.like-btn, .wtchl-btn, .more-btn{
+.like-btn, .wtchl-btn {
   border: none;
   cursor: pointer;
   font-size: 25px;
   background-color: transparent;
   color: #3700a6;
-}
-
-.more-btn {
-  font-size: medium;
-  font-weight: bolder;
-}
-
-.more-btn:hover {
-  color: red;
 }
 
 .card-button {
@@ -221,28 +216,17 @@
   background-color:#7c0935;
 }
 
-.card-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  z-index: 1;
-  background-color: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+.trailer-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #3700a6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
 }
 
-.comment-modal {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 2;
+.trailer-btn:hover {
+  background-color: #7c0935;
 }
-
 

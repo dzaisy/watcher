@@ -5,140 +5,160 @@
         "name": "Snowfall",
         "genre": "Crime Fiction, Mystery",
         "description": "During the budding drug epidemic in Los Angeles in the early 1980s, a crime family decides to make money selling cocaine. Meanwhile, a CIA operative also gets involved.",
-        "image": "https://image.tmdb.org/t/p/original/y7ntzl7msiaS6o7dvDbNG7XFYcR.jpg"
+        "image": "https://image.tmdb.org/t/p/original/y7ntzl7msiaS6o7dvDbNG7XFYcR.jpg",
+        "link": "https://www.youtube.com/watch?v=0yCoLNmhJWM"
       },
       {
         "id": 2,
         "name": "Fifty Shades of Grey",
         "genre": "Romance",
         "description": "Fifty Shades is a British-American film trilogy series based on the Fifty Shades trilogy by English author E. L. James. It is distributed by Universal Studios, and stars Dakota Johnson and Jamie Dornan as the lead roles Anastasia Steele and Christian Grey, respectively.",
-        "image": "https://upload.wikimedia.org/wikipedia/en/7/73/Fifty_Shades_of_Grey_poster.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/7/73/Fifty_Shades_of_Grey_poster.jpg",
+        "link": "https://www.youtube.com/watch?v=SfZWFDs0LxA"
       },
       {
         "id": 3,
         "name": "The Shawshank Redemption",
         "genre": "Drama",
         "description": "Two imprisoned men bond over a number of years, finding solace and eventual redemption through acts of common decency.",
-        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KBwRKCB9g4O0ojNzYC1uvw.jpeg"
+        "image": "https://miro.medium.com/v2/resize:fit:720/format:webp/1*KBwRKCB9g4O0ojNzYC1uvw.jpeg",
+        "link": "https://www.youtube.com/watch?v=PLl99DlL6b4"
       },
       {
         "id": 4,
         "name": "Pulp Fiction",
         "genre": "Crime, Drama",
         "description": "The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.",
-        "image": "https://images.cdn.prd.api.discomax.com/2023/06/29/44fbd1b4-f4c9-37f8-ab47-e70a52519b56.jpeg?f=jpg&q=75&w=1280&w=1200"
+        "image": "https://images.cdn.prd.api.discomax.com/2023/06/29/44fbd1b4-f4c9-37f8-ab47-e70a52519b56.jpeg?f=jpg&q=75&w=1280&w=1200",
+        "link": "https://www.youtube.com/watch?v=0yCoLNmhJWM"
       },
       {
         "id": 5,
         "name": "The Dark Knight",
         "genre": "Action, Crime, Drama",
         "description": "When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.",
-        "image": "https://www.pluggedin.com/wp-content/uploads/2019/12/the-dark-knight-1024x576.jpg"
+        "image": "https://www.pluggedin.com/wp-content/uploads/2019/12/the-dark-knight-1024x576.jpg",
+        "link": "https://www.youtube.com/watch?v=EXeTwQWrcwY"
       },
       {
         "id": 6,
         "name": "Forrest Gump",
         "genre": "Drama, Romance",
         "description": "The presidencies of Kennedy and Johnson, the events of Vietnam, Watergate and other historical events unfold from the perspective of an Alabama man with an IQ of 75, whose only desire is to be reunited with his childhood sweetheart.",
-        "image": "https://shop-cdn.bfi.org.uk/media/catalog/product/cache/4088ca07390e11598713fc5e2ff6ef9d/f/o/forrest_gump_1.png"
+        "image": "https://shop-cdn.bfi.org.uk/media/catalog/product/cache/4088ca07390e11598713fc5e2ff6ef9d/f/o/forrest_gump_1.png",
+        "link": "https://www.youtube.com/watch?v=bLvqoHBptjg"
       },
       {
         "id": 7,
         "name": "The Matrix",
         "genre": "Action, Sci-Fi",
         "description": "A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR14uzp5qMUiDC7fI_kAWGOfWVfPuoXZsXLlCQK15fqTkljP9ErRCPanIwo3ATgj7Jn9YU&usqp=CAU"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR14uzp5qMUiDC7fI_kAWGOfWVfPuoXZsXLlCQK15fqTkljP9ErRCPanIwo3ATgj7Jn9YU&usqp=CAU",
+        "link": "https://www.youtube.com/watch?v=vKQi3bBA1y8"
       },
       {
         "id": 8,
         "name": "Schindler's List",
         "genre": "Biography, Drama, History",
         "description": "In German-occupied Poland during World War II, Oskar Schindler gradually becomes concerned for his Jewish workforce after witnessing their persecution by the Nazis.",
-        "image": "https://northhowler.com/wp-content/uploads/2021/12/p15227_p_v13_be-675x900.jpg"
+        "image": "https://northhowler.com/wp-content/uploads/2021/12/p15227_p_v13_be-675x900.jpg",
+        "link": "https://www.youtube.com/watch?v=mxphAlJID9U"
       },
       {
         "id": 9,
         "name": "The Lord of the Rings: The Return of the King",
         "genre": "Action, Adventure, Drama",
         "description": "Gandalf and Aragorn lead the World of Men against Sauron's army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZIiYE5yKO33RHL57S5YXZS2z6OjODMyCE8MgIZ7juw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBZIiYE5yKO33RHL57S5YXZS2z6OjODMyCE8MgIZ7juw&s",
+        "link": "https://www.youtube.com/watch?v=r5X-hFf6Bwo"
       },
       {
         "id": 10,
         "name": "Fight Club",
         "genre": "Drama",
         "description": "An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.",
-        "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/f/fc/Fight_Club_poster.jpg",
+        "link": "https://www.youtube.com/watch?v=BdJKm16Co6M"
       },
       {
         "id": 11,
         "name": "Wanted Man",
         "genre": "Action",
         "description": "Hoping to save his job, an aging detective travels to Mexico to extradite a woman who witnessed the murders of two DEA agents. Once there, he realizes that bad hombres on both sides of the border are now gunning for him.",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Wanted_man_film_poster.jpg/220px-Wanted_man_film_poster.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/c/cc/Wanted_man_film_poster.jpg/220px-Wanted_man_film_poster.jpg",
+        "link": "https://www.youtube.com/watch?v=Uaz1D2oYzco"
       },
       {
         "id": 12,
         "name": "Upgraded",
         "genre": "Romance,Comedy",
         "description": "An aspiring art intern is invited on a last-minute work trip to London, where she meets a handsome stranger.",
-        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Upgraded-film-poster.jpg/220px-Upgraded-film-poster.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a9/Upgraded-film-poster.jpg/220px-Upgraded-film-poster.jpg",
+        "link": "https://www.youtube.com/watch?v=P3_dj7BnHp8"
       },
       {
         "id": 13,
         "name": "Badland Hunters",
         "genre": "Action",
         "description": "After a major earthquake, Seoul, South Korea, transforms into an apocalyptic wasteland where everything from civilization to law and order has collapsed.",
-        "image": "https://www.pinkvilla.com/images/2024-01/1702613170_badland-hunters.jpg"
+        "image": "https://www.pinkvilla.com/images/2024-01/1702613170_badland-hunters.jpg",
+        "link": "https://www.youtube.com/watch?v=hKbo-ZKdSqw"
       },
       {
         "id": 14,
         "name": "Blue Star",
         "genre": "Sport",
         "description": "Ranjith and Rajesh, cricket captains from Arakkonam, India, ignite a rivalry that ruins their chances of playing when politics interferes.",
-        "image": "https://upload.wikimedia.org/wikipedia/en/2/2d/Blue_Star_%28film%29.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/2d/Blue_Star_%28film%29.jpg",
+        "link": "https://www.youtube.com/watch?v=AGrkyXGiKRE"
       },
       {
         "id": 15,
         "name": "The Underdogs",
         "genre": "Sport",
         "description": "Jaycen Jennings, a former NFL superstar, agrees to coach a youth football team to avoid serving time in prison.",
-        "image": "https://i.ytimg.com/vi/MmfiqSJAou8/maxresdefault.jpg"
+        "image": "https://i.ytimg.com/vi/MmfiqSJAou8/maxresdefault.jpg",
+        "link": "https://www.youtube.com/watch?v=MmfiqSJAou8"
       },
       {
         "id": 16,
         "name": "Fighter",
         "genre": "Action",
         "description": "Shamsher Pathania fulfills his lifelong dream and becomes a member of the Indian air force. As he faces rigorous challenges, Patty must rise above his own limitations to become a true hero.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUsk2dbinaQi2Ih7PWkllI980IuJgJaO-DQ4TCGJCnw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxUsk2dbinaQi2Ih7PWkllI980IuJgJaO-DQ4TCGJCnw&s",
+        "link": "https://www.youtube.com/watch?v=6amIq_mP4xM"
       },
       {
         "id": 17,
         "name": "The Beekeeper",
         "genre": "Action",
         "description": "One man's brutal campaign for vengeance takes on national stakes after it's revealed he's a former operative of a powerful and clandestine organization known as Beekeepers.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxdJ2BxN0YBux1ZFsxgs2piLyo628o0ocQgSvV453Ugg&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQxdJ2BxN0YBux1ZFsxgs2piLyo628o0ocQgSvV453Ugg&s",
+        "link": "https://www.youtube.com/watch?v=SzINZZ6iqxY"
       },
       {
         "id": 18,
         "name": "Luther: The Fallen Sun",
         "genre": "Thriller",
         "description": "A serial killer terrorizes London while disgraced detective John Luther sits behind bars. Haunted by his failure to capture the cyber psychopath who now taunts him, Luther decides to break out of prison to finish the job by any means necessary.",
-        "image": "https://ntvb.tmsimg.com/assets/p23699949_v_h10_aa.jpg?w=1280&h=720"
+        "image": "https://ntvb.tmsimg.com/assets/p23699949_v_h10_aa.jpg?w=1280&h=720",
+        "link": "https://www.youtube.com/watch?v=EGK5qtXuc1Q"
       },
       {
         "id": 19,
         "name": "Smile",
         "genre": "Mystery, Horror",
         "description": "After witnessing a bizarre, traumatic incident involving a patient, Dr. Rose Cotter starts experiencing frightening occurrences that she can't explain. As an overwhelming terror begins taking over her life, Rose must confront her troubling past in order to survive and escape her horrifying new reality.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSm0VmZfcKTSbyTxc84sJIeAPxeN8A0O4vQIW8HfrgG7sZ6ssKSVCCv9qnBJhXW3-tipA&usqp=CAU"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSm0VmZfcKTSbyTxc84sJIeAPxeN8A0O4vQIW8HfrgG7sZ6ssKSVCCv9qnBJhXW3-tipA&usqp=CAU",
+        "link": "https://www.youtube.com/watch?v=BcDK7lkzzsU"
       },
       {
         "id": 20,
         "name": "Talk To Me",
         "genre": "Thriller, Horror",
         "description": "When a group of friends discover how to conjure spirits with an embalmed hand, they become hooked on the new thrill and high-stakes party game -- until one of them goes too far and unleashes terrifying supernatural forces.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDD9Zs6OQjXzDSY_okwP1ZFBLFpA083Bmr8Nf5QFllQKXMHt_givVpPNiK83reQD1bkHA&usqp=CAU"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDD9Zs6OQjXzDSY_okwP1ZFBLFpA083Bmr8Nf5QFllQKXMHt_givVpPNiK83reQD1bkHA&usqp=CAU",
+        "link": "https://www.youtube.com/watch?v=aLAKJu9aJys"
       }
     ],
   
@@ -148,139 +168,159 @@
         "name": "Fallout",
         "genre": "Action, Drama, Thriller",
         "description": "In a future, post-apocalyptic Los Angeles brought about by nuclear decimation, citizens must live in underground bunkers to protect themselves from radiation, mutants and bandits.",
-        "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/04/lucy-exiting-vault-33-in-fallout.jpeg?q=70&fit=contain&w=1140&h=&dpr=1"
+        "image": "https://static1.cbrimages.com/wordpress/wp-content/uploads/2024/04/lucy-exiting-vault-33-in-fallout.jpeg?q=70&fit=contain&w=1140&h=&dpr=1",
+        "link": "https://www.youtube.com/watch?v=0kQ8i2FpRDk"
       },
       {
         "id": 2,
         "name": "Outlander",
         "genre": "Romance",
         "description": "After the Second World War, Claire Beauchamp Randall enjoys a second honeymoon in Scotland with her husband. However, she is transported to a mysterious world where she meets warrior Jamie Fraser.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK0-TxK4shCGYEflFr_GWkOGPe9e39FaVfEP9LZe3GsA&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQK0-TxK4shCGYEflFr_GWkOGPe9e39FaVfEP9LZe3GsA&s",
+        "link": "https://www.youtube.com/watch?v=gxurD9SYbog"
       },
       {
         "id": 3,
         "name": "The Gentlemen",
         "genre": "Comedy",
         "description": "When aristocratic Eddie inherits the family estate, he discovers that it's home to an enormous weed empire, and its proprietors aren't going anywhere.",
-        "image": "https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQbkn93mIsQb1_NaLO9s7o6FokiWT3keLiqJyW2fpOPsnj_I8qW8xATLRm2BheiwtTZQhdtA9VoN4vH5MLlgCjGDGVnmR6Sbq1ivftkPFQ83ltmzUKJhbvSeHOP0ASanoPt_y2evkdfrPJJcZJ_MDfTi9.jpg?r=da0"
+        "image": "https://dnm.nflximg.net/api/v6/2DuQlx0fM4wd1nzqm5BFBi6ILa8/AAAAQbkn93mIsQb1_NaLO9s7o6FokiWT3keLiqJyW2fpOPsnj_I8qW8xATLRm2BheiwtTZQhdtA9VoN4vH5MLlgCjGDGVnmR6Sbq1ivftkPFQ83ltmzUKJhbvSeHOP0ASanoPt_y2evkdfrPJJcZJ_MDfTi9.jpg?r=da0",
+        "link": "https://www.youtube.com/watch?v=wyEOwHrpZH4"
       },
       {
         "id": 4,
         "name": "A Man in Full",
         "genre": "Drama",
         "description": "When real estate mogul Charlie Croker faces bankruptcy, political and business interests collide, as he defends his empire from those attempting to capitalize on his fall from grace.",
-        "image": "https://outloudculture.com/wp-content/uploads/2024/03/AAAABYmcJMUE8sAoUDCW3YIMfO5yOOWUpSwauz2PCT9E-V47wnjjYSEXU0BY8KiQYD7ca8x2qdB5DSIdljYjlkWjm6jStAZpVyRdJUetumrSrOehts-9yVAANZHxfjUNbF9j_2nHUA.webp"
+        "image": "https://outloudculture.com/wp-content/uploads/2024/03/AAAABYmcJMUE8sAoUDCW3YIMfO5yOOWUpSwauz2PCT9E-V47wnjjYSEXU0BY8KiQYD7ca8x2qdB5DSIdljYjlkWjm6jStAZpVyRdJUetumrSrOehts-9yVAANZHxfjUNbF9j_2nHUA.webp",
+        "link": "https://www.youtube.com/watch?v=S9bF4X38O0o"
       },
       {
         "id": 5,
         "name": "Fiasco",
         "genre": "Comedy, Drama",
         "description": "Raphaël Valande begins shooting his first feature film as a tribute to the heroic life of his grandmother, a member of the French Resistance. But filming gradually turns into a nightmare, as someone on the crew is trying to sabotage his film.",
-        "image": "https://pbs.twimg.com/media/GMFGT1qWwAA1g6Q.jpg"
+        "image": "https://pbs.twimg.com/media/GMFGT1qWwAA1g6Q.jpg",
+        "link": "https://www.youtube.com/watch?v=ZpUOaKdOw4M"
       },
       {
         "id": 6,
         "name": "The Signal",
         "genre": "Action, Sci-Fi",
         "description": "A missing astronaut's family frantically searches for answers, but the more they uncover, the more the threat grows to them, and the world.",
-        "image": "https://www.heavenofhorror.com/wp-content/uploads/2024/03/the-signal-2024-netflix-series-1.jpg"
+        "image": "https://www.heavenofhorror.com/wp-content/uploads/2024/03/the-signal-2024-netflix-series-1.jpg",
+        "link": "https://www.youtube.com/watch?v=lcqXfNzoICc"
       },
       {
         "id": 7,
         "name": "Stranger Things",
         "genre": "Drama, Fantasy, Horror",
         "description": "In a small town where everyone knows everyone, a group of kids discovers a strange girl who claims to be from a parallel dimension.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/220px-Stranger_Things_logo.png"
+        "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Stranger_Things_logo.png/220px-Stranger_Things_logo.png",
+        "link": "https://www.youtube.com/watch?v=b9EkMc79ZSU"
       },
       {
         "id": 8,
         "name": "Friends",
         "genre": "Comedy, Romance",
         "description": "Follows the personal and professional lives of six twenty to thirty-something-year-old friends living in Manhattan.",
-        "image": "http://images1.resources.foxtel.com.au/store2/mount1/16/3/85td8.jpg"
+        "image": "http://images1.resources.foxtel.com.au/store2/mount1/16/3/85td8.jpg",
+        "link": "https://www.youtube.com/watch?v=7ES5eEAb6Dw"
       },
       {
         "id": 9,
         "name": "The Office (US)",
         "genre": "Comedy",
         "description": "A mockumentary on a group of typical office workers, where the workday consists of ego clashes, inappropriate behavior, and tedium.",
-        "image": "https://upload.wikimedia.org/wikipedia/en/2/24/TheOfficeUSSeason3Cover.jpg"
+        "image": "https://upload.wikimedia.org/wikipedia/en/2/24/TheOfficeUSSeason3Cover.jpg",
+        "link": "https://www.youtube.com/watch?v=2iKZmRR9AR4"
       },
       {
         "id": 10,
         "name": "Breaking Bad: Better Call Saul",
         "genre": "Crime, Drama",
         "description": "The trials and tribulations of criminal lawyer Jimmy McGill in the time before he established his strip-mall law office in Albuquerque, New Mexico.",
-        "image": "https://static.tvtropes.org/pmwiki/pub/images/screenshot_2023_08_30_at_16_21_31_ems_3jpg_webp_image_1400_2100_pixels_scaled_35.png"
+        "image": "https://static.tvtropes.org/pmwiki/pub/images/screenshot_2023_08_30_at_16_21_31_ems_3jpg_webp_image_1400_2100_pixels_scaled_35.png",
+        "link": "https://www.youtube.com/watch?v=HN4oydykJFc"
       },
       {
         "id": 11,
         "name": "Fool Me Once",
         "genre": "Thriller",
         "description": "Maya Stern is trying to come to terms with the brutal murder of her husband, Joe. However, when Maya installs a nanny-cam to keep an eye on her young daughter, she is shocked to see her husband in her house.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9EB03I0m0IsZSFRCQNK_QdjFmngpq4ZYnpWbzkrB4Cw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9EB03I0m0IsZSFRCQNK_QdjFmngpq4ZYnpWbzkrB4Cw&s",
+        "link": "https://www.youtube.com/watch?v=nhC8AG8cwcc"
       },
       {
         "id": 12,
         "name": "Crooks",
         "genre": "Thriller",
         "description": "A priceless coin puts rival gangs at odds, forcing a retired safe cracker to team up with a gangster for one last heist.The trials and tribulations of criminal lawyer Jimmy McGill in the time before he established his strip-mall law office in Albuquerque, New Mexico.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREg4rSMjwEn4gaXgwkbtiXq9mEte7B8nXFyNzejW6apw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREg4rSMjwEn4gaXgwkbtiXq9mEte7B8nXFyNzejW6apw&s",
+        "link": "https://www.youtube.com/watch?v=HGInrug61bs"
       },
       {
         "id": 13,
         "name": "Captivating The King",
         "genre": "Romance",
         "description": "Lee In becomes king but contends with power struggles; baduk player Kang Hee Soo tries to seduce him but gets seduced instead.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTACPLgzcGA60TqdZ47DTG8fyhu7k7qSXpWLVtcs2OQlQ&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTACPLgzcGA60TqdZ47DTG8fyhu7k7qSXpWLVtcs2OQlQ&s",
+        "link": "https://www.youtube.com/watch?v=_1t7mqiqtkk"
       },
       {
         "id": 14,
         "name": "Detective Forst",
         "genre": "Crime, Drama",
         "description": "When a detective's maverick approach to investigating gets him fired, he teams up with a journalist to solve a series of brutal murders outside the law.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWSpNDPpO9U8JUi97PCkiGl5uWd_2VtvDpy3NAds0Qw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKWSpNDPpO9U8JUi97PCkiGl5uWd_2VtvDpy3NAds0Qw&s",
+        "link": "https://www.youtube.com/watch?v=g70lOY0aWUY"
       },
       {
         "id": 15,
         "name": "Constellation",
         "genre": "Sci-fi",
         "description": "When a fatal accident occurs on board the International Space Station, a lone astronaut makes the heroic journey back to Earth, only to discover key pieces of her life -- including her young daughter -- have changed.",
-        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/77500581-5da6-40ec-b22a-923491665404/dgq6kag-98341941-d53f-4308-bdbf-bfa0f2e58ed9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc3NTAwNTgxLTVkYTYtNDBlYy1iMjJhLTkyMzQ5MTY2NTQwNFwvZGdxNmthZy05ODM0MTk0MS1kNTNmLTQzMDgtYmRiZi1iZmEwZjJlNThlZDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XJh249dE6TFtwxjrCW2K4hDuVSeKamaIsgUbFCBOt_U"
+        "image": "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/77500581-5da6-40ec-b22a-923491665404/dgq6kag-98341941-d53f-4308-bdbf-bfa0f2e58ed9.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzc3NTAwNTgxLTVkYTYtNDBlYy1iMjJhLTkyMzQ5MTY2NTQwNFwvZGdxNmthZy05ODM0MTk0MS1kNTNmLTQzMDgtYmRiZi1iZmEwZjJlNThlZDkucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.XJh249dE6TFtwxjrCW2K4hDuVSeKamaIsgUbFCBOt_U",
+        "link": "https://www.youtube.com/watch?v=4dAaLbsQSzI"
       },
       {
         "id": 16,
         "name": "Franklin",
         "genre": "Biography",
         "description": "In December 1776, Benjamin Franklin is world-famous for his electrical experiments, but his passion and power are put to the test when he embarks on a secret mission to France, with the fate of American independence hanging in the balance.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ie2ReNA-UmSCBPplWErb5paeQMutPNhhycatBqS0Zw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2ie2ReNA-UmSCBPplWErb5paeQMutPNhhycatBqS0Zw&s",
+        "link": "https://www.youtube.com/watch?v=YPG4I2jPSRE"
       }, {
         "id": 17,
         "name": "NASCAR: Full Speed",
         "genre": "Documentary",
         "description": "Fueled by passion and NASCAR Cup glory, drivers and their teams compete for the championship and the chance to make history.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGf-3DmnmBgcdI16XsaBPwu_LEzR8tYBkDdQkeo6sAg&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTDGf-3DmnmBgcdI16XsaBPwu_LEzR8tYBkDdQkeo6sAg&s",
+        "link": "https://www.youtube.com/watch?v=jatKwzX69Uc"
       },
       {
         "id": 18,
         "name": "Wednesday",
         "genre": "Comedy, Drama",
         "description": "While attending Nevermore Academy, Wednesday Addams attempts to master her emerging psychic ability, thwart a killing spree and solve the mystery that embroiled her parents 25 years ago.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQr-TS5DtSeybTnoegVn3n3xlG2OrDIx3HgWTaxcZ-Mw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQr-TS5DtSeybTnoegVn3n3xlG2OrDIx3HgWTaxcZ-Mw&s",
+        "link": "https://www.youtube.com/watch?v=Di310WS8zLk"
       },
       {
         "id": 19,
         "name": "Supacell",
         "genre": "Sci-fi",
         "description": "In South London, a group of normal people suddenly develop superpowers, and the only apparent connection between them is that they are all Black. As they deal with the impact of their powers on their daily lives, one man must bring them together.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlTFAani7JCGdJVcFHKS95PdfFSFjC5zPHedHSgn3Bw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTwlTFAani7JCGdJVcFHKS95PdfFSFjC5zPHedHSgn3Bw&s",
+        "link": "https://www.youtube.com/watch?v=0URJ2Gu4K2M"
       },
       {
         "id": 20,
         "name": "Power Book II: Ghost",
         "genre": "Crime, Drama",
         "description": "Tariq St. Patrick, the teenage son of a drug lord, goes to great lengths to release his mother, who is accused of a crime he committed, from prison.",
-        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmh0AusSKkvYo_Bs5uvuhbNYBqhiZsm4kZu_MX92ogw&s"
+        "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrmh0AusSKkvYo_Bs5uvuhbNYBqhiZsm4kZu_MX92ogw&s",
+        "link": "https://www.youtube.com/watch?v=ZUmTlGMt4SI"
       }
     ]
   }
