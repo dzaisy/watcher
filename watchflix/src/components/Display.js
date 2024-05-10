@@ -1,12 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import Like from './Like';
 import WatchList from './WatchList';
 
 function Display(props) {
   const {movies, series, likedMovies, likedSeries, movieWatchlist, seriesWatchlist,
     renderLiked, renderWatchlist, handleMovieLike, handleSeriesLike,
-    handleMovieWatchlist, handleSeriesWatchlist} = props;
+    handleMovieWatchlist, handleSeriesWatchlist, handleTrailerClick} = props;
 
+    const [trailerLink, setTrailerLink] = useState(null);
+    
   return (
     <div className="content">
       {renderLiked && (
@@ -26,6 +28,12 @@ function Display(props) {
         />
       )}
 
+        {trailerLink && (
+                <div className="trailer-popup">
+                <iframe title="Trailer" width="560" height="315" src={trailerLink} frameborder="0" allowfullscreen></iframe>
+                </div>
+            )}
+
       <div className="grid-container">
         {movies.map(movie => (
           <div key={movie.id} className="card">
@@ -38,16 +46,22 @@ function Display(props) {
                 <button
                   className="like-btn"
                   onClick={() => handleMovieLike(movie.id)}
-                  style={{ color: likedMovies.includes(movie.id) ? 'red' : '#3700a6' }}
+                  style={{ color: likedMovies.includes(movie.id) ? '#7c0935' : '#3700a6' }}
                 >
                   ♥
                 </button>
                 <button
                   className="wtchl-btn"
                   onClick={() => handleMovieWatchlist(movie.id)}
-                  style={{ color: movieWatchlist.includes(movie.id) ? 'red' : '#3700a6' }}
+                  style={{ color: movieWatchlist.includes(movie.id) ? '#7c0935' : '#3700a6' }}
                 >
                   +
+                </button>
+                <button 
+                    className="trailer-btn"
+                    onClick={() => handleTrailerClick(movie.link)}
+                >
+                    trailer
                 </button>
               </div>
             </div>
@@ -68,16 +82,22 @@ function Display(props) {
                 <button
                   className="like-btn"
                   onClick={() => handleSeriesLike(serie.id)}
-                  style={{ color: likedSeries.includes(serie.id) ? 'red' : '#3700a6' }}
+                  style={{ color: likedSeries.includes(serie.id) ? '#7c0935' : '#3700a6' }}
                 >
                   ♥
                 </button>
                 <button
                   className="wtchl-btn"
                   onClick={() => handleSeriesWatchlist(serie.id)}
-                  style={{ color: seriesWatchlist.includes(serie.id) ? 'red' : '#3700a6' }}
+                  style={{ color: seriesWatchlist.includes(serie.id) ? '#7c0935' : '#3700a6' }}
                 >
                   +
+                </button>
+                <button 
+                    className="trailer-btn"
+                    onClick={() => handleTrailerClick(serie.link)}
+                >
+                    trailer
                 </button>
               </div>
             </div>

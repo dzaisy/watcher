@@ -13,7 +13,7 @@ function App() {
   const [seriesWatchlist, setSeriesWatchlist] = useState([]);
   const [movieWatchlist, setMovieWatchlist] = useState([]);
   const [renderWatchlist, setRenderWatchlist] = useState(false);
-
+  const [trailerLink, setTrailerLink] = useState([])
 
   useEffect(() => {
     fetch('http://localhost:3000/movies')
@@ -85,6 +85,11 @@ function App() {
     setRenderWatchlist(!renderWatchlist)
   }
 
+  function handleTrailerClick(link) {
+    setTrailerLink(link);
+  }
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -116,6 +121,7 @@ function App() {
         handleSeriesLike={handleSeriesLike}
         handleMovieWatchlist={handleMovieWatchlist}
         handleSeriesWatchlist={handleSeriesWatchlist}
+        handleTrailerClick={handleTrailerClick}
       />
       {showAuthentication && <Authentication onClose={() => setShowAuthentication(false)} />}
     </div>
