@@ -1,8 +1,7 @@
 import './App.css';
 import React, { useState, useEffect } from 'react';
 import Authentication from './components/Authentication';
-import Like from './components/Like';
-import WatchList from './components/WatchList';
+import Display from './components/Display';
 
 function App() {
   const [showAuthentication, setShowAuthentication] = useState(false);
@@ -44,8 +43,6 @@ function App() {
       if (storedSeriesWatchlist) {
         setLikedSeries(storedSeriesWatchlist);
       }
-
-
   }, []);
 
   function handleMovieLike(id) {
@@ -106,57 +103,20 @@ function App() {
 
         </nav>
       </header>
-      <div className="content">
-        {renderLiked && (
-          <Like 
-            likedMovies={likedMovies}
-            likedSeries={likedSeries}
-            handleMovieLike={handleMovieLike}
-            handleSeriesLike={handleSeriesLike}
-          />
-        )}
-        {renderWatchlist && (
-          <WatchList 
-            movieWatchlist={movieWatchlist}
-            seriesWatchlist={seriesWatchlist}
-            handleMovieWatchlist={handleMovieWatchlist}
-            handleSeriesWatchlist={handleSeriesWatchlist}
-          />
-        )}
-        <div className="grid-container">
-          {movies.map(movie => (
-            <div key={movie.id} className="card">
-              <img src={movie.image} alt={movie.name} />
-              <div className="card-info">
-                <h2>{movie.name}</h2>
-                <p className="genre">{movie.genre}</p>
-                <p>{movie.description}</p>
-                <div className="card-button">
-                  <button className="like-btn" onClick={() => handleMovieLike(movie.id)} style={{color: likedMovies.includes(movie.id) ? 'red' : 'white'}}>♥</button>
-                  <button className="wtchl-btn" onClick={() => handleMovieWatchlist(movie.id)} style={{color: movieWatchlist.includes(movie.id) ? 'red' : 'white'}}>+</button>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-
-        <div className="grid-container">
-          {series.map(serie => (
-            <div key={serie.id} className="card">
-              <img src={serie.image} alt={serie.name} />
-              <div className="card-info">
-                <h2>{serie.name}</h2>
-                <p className="genre">{serie.genre}</p>
-                <p>{serie.description}</p>
-                <div className="card-button">
-                  <button className="like-btn" onClick={() => handleSeriesLike(serie.id)} style={{color: likedSeries.includes(serie.id) ? 'red' : 'white'}}>♥</button>  
-                  <button className="wtchl-btn" onClick={() => handleSeriesWatchlist(serie.id)} style={{color: seriesWatchlist.includes(serie.id) ? 'red' : 'white'}}>+</button>        
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
+      <Display
+        movies={movies}
+        series={series}
+        likedMovies={likedMovies}
+        likedSeries={likedSeries}
+        movieWatchlist={movieWatchlist}
+        seriesWatchlist={seriesWatchlist}
+        renderLiked={renderLiked}
+        renderWatchlist={renderWatchlist}
+        handleMovieLike={handleMovieLike}
+        handleSeriesLike={handleSeriesLike}
+        handleMovieWatchlist={handleMovieWatchlist}
+        handleSeriesWatchlist={handleSeriesWatchlist}
+      />
       {showAuthentication && <Authentication onClose={() => setShowAuthentication(false)} />}
     </div>
   );
