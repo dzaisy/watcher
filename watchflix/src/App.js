@@ -1,14 +1,9 @@
-// App.js
+import './App.css';
 import React, { useState, useEffect } from 'react';
-
-import SearchBar from "./components/SearchBar";
-import Filter from "./components/Filter"; // Import the Filter component
-import "./App.css"; // Import your CSS file
-
 import Authentication from './components/Authentication';
 import Display from './components/Display';
 import SearchBar from './components/SearchBar';
-
+import Filter from './components/Filter';
 
 function App() {
   const [showAuthentication, setShowAuthentication] = useState(false);
@@ -109,7 +104,6 @@ function App() {
     setFilteredSeries(filteredSeries);
   };
 
-
   const handleGenreFilterChange = (genre) => {
     // Filter movies based on selected genre
     const filteredMovies = genre === ''
@@ -123,33 +117,22 @@ function App() {
 
     setFilteredMovies(filteredMovies);
     setFilteredSeries(filteredSeries);
+  }
 
   const handleWatchflixClick = () => {
     setSearchQuery(''); // Reset the search query
-
   };
 
   return (
     <div className="App">
       <header className="App-header">
         <nav className="navbar">
-
-          <div className="logo">Watchflix</div>
-          <SearchBar onSearch={handleSearchInputChange} />
-          <div className="login">Login</div>
-          <Filter onFilter={handleGenreFilterChange} /> {/* Add the Filter component */}
-          <div className="profile">Profile</div>
-          <div className="watchlist">Watchlist</div>
-
-      
           <div className="logo" onClick={handleWatchflixClick}>Watchflix</div>
           <SearchBar handleSearch={handleSearch} />
-          <button className="filter">Filter</button>
+          <Filter onFilter={handleGenreFilterChange} />
           <button className="login" onClick={() => setShowAuthentication(true)}>Login</button>
           <button className="likes" onClick={handleLikeClick}>♥</button>
           <button className="watchlist" onClick={handleWatchlistClick}>Watchlist</button>
-
-
         </nav>
       </header>
       <Display
@@ -172,7 +155,6 @@ function App() {
 }
 
 export default App;
-
 
 
 // onClick={() => handleMovieLike(movie.id)} => sets up onclick and ensures that when btn is clicked function is called with the movie id. manages a/r from likes

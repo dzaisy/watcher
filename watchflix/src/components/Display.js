@@ -7,7 +7,7 @@ function Display(props) {
     renderLiked, renderWatchlist, handleMovieLike, handleSeriesLike,
     handleMovieWatchlist, handleSeriesWatchlist, handleTrailerClick} = props;
 
-    const [trailerLink, setTrailerLink] = useState(null);
+  const [trailerLink, setTrailerLink] = useState(null);
     
   return (
     <div className="content">
