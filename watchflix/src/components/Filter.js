@@ -1,6 +1,7 @@
 // Filter.js
 import React, { useState, useEffect } from 'react';
 
+
 function Filter({ onFilter, setMovies, setFilteredMovies, setSeries, setFilteredSeries }) {
   const [selectedGenre, setSelectedGenre] = useState('');
 
@@ -51,3 +52,5 @@ function Filter({ onFilter, setMovies, setFilteredMovies, setSeries, setFiltered
 }
 
 export default Filter;
+
+
