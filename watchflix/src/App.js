@@ -1,6 +1,8 @@
-import './App.css';
+// App.js
 import React, { useState, useEffect } from 'react';
 import SearchBar from "./components/SearchBar";
+import Filter from "./components/Filter"; // Import the Filter component
+import "./App.css"; // Import your CSS file
 
 function App() {
   const [movies, setMovies] = useState([]);
@@ -47,6 +49,21 @@ function App() {
     setFilteredSeries(filteredSeries);
   };
 
+  const handleGenreFilterChange = (genre) => {
+    // Filter movies based on selected genre
+    const filteredMovies = genre === ''
+      ? movies
+      : movies.filter(movie => movie.genre.toLowerCase() === genre.toLowerCase());
+
+    // Filter series based on selected genre
+    const filteredSeries = genre === ''
+      ? series
+      : series.filter(serie => serie.genre.toLowerCase() === genre.toLowerCase());
+
+    setFilteredMovies(filteredMovies);
+    setFilteredSeries(filteredSeries);
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -54,7 +71,7 @@ function App() {
           <div className="logo">Watchflix</div>
           <SearchBar onSearch={handleSearchInputChange} />
           <div className="login">Login</div>
-          <div className="filter">Filter</div>
+          <Filter onFilter={handleGenreFilterChange} /> {/* Add the Filter component */}
           <div className="profile">Profile</div>
           <div className="watchlist">Watchlist</div>
         </nav>
