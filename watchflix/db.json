@@ -1,5 +1,4 @@
 {
-
   "movies": [
     {
       "id": 1,
@@ -288,51 +287,21 @@
     {},
     {
       "id": "84da",
-      "name": "",
-      "email": "res",
-      "password": "res"
+      "name": "rosie",
+      "email": "rosie@gmail.com",
+      "password": "resvkjo"
     },
     {
-      "id": "9ef2",
-      "name": "",
-      "email": "",
-      "password": ""
+      "id": "ad5e",
+      "name": "apple",
+      "email": "apples@gmail.com",
+      "password": "redrdus"
     },
     {
-      "id": "45df",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "5fa8",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "f3ee",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "e452",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "3b57",
-      "name": "",
-      "email": "",
-      "password": ""
-    },
-    {
-      "id": "d457",
-      "name": "",
-      "email": "",
-      "password": ""
+      "id": "83c5",
+      "name": "cleo",
+      "email": "cleo@gmail.com",
+      "password": "rawrr"
     }
   ]
 }

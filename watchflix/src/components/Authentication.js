@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import email_icon from '../images/email.png';
 import password_icon from '../images/password.png';
@@ -30,26 +29,25 @@ function Authentication({ onClose }) {
 
   const handleSubmit = () => {
     // Here you can access the values of name, email, and password and perform actions like sending them to a server or storing them locally.
-
     const formData = {
       name,
       email,
       password,
     }
 
-fetch ("http://localhost:3000/users", { 
-  method: 'POST', headers: {
-    "Content-Type": "application/json",
-  },
-  body:JSON.stringify(formData)
+    fetch("http://localhost:3000/users", {
+      method: 'POST', headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData)
 
-})
-.then((res)=>res.json())
-.then((data)=>{
-  setName('');
-setEmail('');
-setPassword('');
-})
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        setName('');
+        setEmail('');
+        setPassword('');
+      })
 
 
 
@@ -57,7 +55,7 @@ setPassword('');
     console.log('Email:', email);
     console.log('Password:', password);
 
-  
+
   };
 
   return (

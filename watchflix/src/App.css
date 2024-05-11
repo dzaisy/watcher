@@ -42,7 +42,7 @@
   margin-right: 10px;
 }
 
-.filter, .likes, .watchlist, .login {
+.likes, .watchlist, .login {
   padding: 8px 16px;
   border-radius: 25px;
   cursor: pointer;
@@ -141,7 +141,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   right: 0;
-  margin-top: 60px;
+  margin-top: 10px;
 }
 
 .liked-items li {
@@ -162,7 +162,7 @@
 }
 
 .watchlist-dropdown {
-  margin-top: 60px;
+  margin-top: 10px;
   position: fixed;
   background-color: rgba(255, 255, 255, 0.8); /* transparency */
   padding: 20px;
