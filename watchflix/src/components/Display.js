@@ -67,9 +67,8 @@ function Display(props) {
             </div>
           </div>
         ))}
-        
       </div>
-
+      
       <div className="grid-container">
         {series.map(serie => (
           <div key={serie.id} className="card">

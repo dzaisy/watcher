@@ -26,8 +26,11 @@
 
 .search-bar {
   flex-grow: 1;
-  margin: 0 150px;
+  margin-left: 10px;
   display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-bar input[type='text'] {
@@ -39,22 +42,13 @@
   margin-right: 10px;
 }
 
-.search-bar button {
-  background-color: #1d0067;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
 .filter, .likes, .watchlist, .login {
   padding: 8px 16px;
-  border-radius: 15px;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 15px;
   margin-right: 10px;
+  size: 20px;
 }
 
 .watchlist {
@@ -62,7 +56,8 @@
 }
 
 .content {
-  padding: 20px;
+  padding: 90px;
+
 }
 
 .grid-container {
@@ -149,14 +144,6 @@
   margin-top: 60px;
 }
 
-.liked-items h2 {
-  margin-bottom: 10px;
-}
-
-.liked-items ul {
-  padding: 10;
-}
-
 .liked-items li {
   margin-bottom: 10px;
 }
@@ -189,14 +176,6 @@
   flex-wrap: wrap;
   flex-direction: row;
   right: 0;
-}
-
-.watchlist-dropdown h2 {
-  margin-bottom: 10px;
-}
-
-.watchlist-dropdown ul {
-  padding: 10;
 }
 
 .watchlist-dropdown li {

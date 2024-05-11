@@ -1,30 +1,28 @@
 // SearchBar.js
 import React, { useState } from 'react';
 
-const SearchBar = ({ onSearch }) => {
-  const [searchQuery, setSearchQuery] = useState('');
+function SearchBar({ handleSearch }) {
+  const [query, setQuery] = useState('');
 
-  const handleSearchInputChange = (event) => {
-    setSearchQuery(event.target.value);
+  const handleChange = (e) => {
+    setQuery(e.target.value);
   };
 
-  const handleSubmit = () => {
-    onSearch(searchQuery.trim());
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    handleSearch(query);
   };
 
   return (
     <div className="search-bar">
-      <input
-        type="text"
-        placeholder="Search..."
-        value={searchQuery}
-        onChange={handleSearchInputChange}
-      />
-      <button type="button" onClick={handleSubmit}>
-        Search
-      </button>
+      <form onSubmit={handleSubmit}>
+        <div className="search-bar">
+         <input type="text" placeholder="Search..." value={query} onChange={handleChange} />
+        </div>
+      </form>
     </div>
   );
-};
+}
 
 export default SearchBar;
+
