@@ -8,6 +8,10 @@
   color: white;
   padding: 20px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar {
@@ -22,8 +26,11 @@
 
 .search-bar {
   flex-grow: 1;
-  margin: 0 150px;
+  margin-left: 10px;
   display: flex;
+  width: 500px;
+  align-items: center;
+  justify-content: center;
 }
 
 .search-bar input[type='text'] {
@@ -35,33 +42,30 @@
   margin-right: 10px;
 }
 
-.search-bar button {
-  background-color: #1d0067;
-  color: white;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 20px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
 .filter, .likes, .watchlist, .login {
   padding: 8px 16px;
-  border-radius: 15px;
+  border-radius: 25px;
   cursor: pointer;
   font-size: 15px;
-  margin-right: 7px;
+  margin-right: 10px;
+  size: 20px;
+}
+
+.watchlist {
+  margin-right: 50px;
 }
 
 .content {
-  padding: 20px;
+  padding: 90px;
+
 }
 
 .grid-container {
   display: grid;
-  grid-template-columns: repeat(5, minmax(200px, 1fr));
-  grid-gap: 30px; /* Increase the gap between cards */
+  grid-template-columns: repeat(4, minmax(200px, 6fr));
+  grid-gap: 25px; /* Increase the gap between cards */
   padding: 20px; /* Add padding to the container */
+  margin-top: 60px;
 }
 
 .card {
@@ -69,17 +73,17 @@
   border-radius: 15px;
   overflow: hidden;
   background-color: #7c0935;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.786);
+  box-shadow: 0 2px 4px rgba(16, 16, 16, 0.786);
   height: 400px; /* Set the height of the card containers */
 }
 
 .card img {
   width: 100%;
-  height: 200px;
+  height: 250px;
   border-radius: 10px;
   display: block;
   object-fit: cover; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.658);
+  box-shadow: 0 2px 4px rgba(15, 1, 14, 0.658);
 }
 
 .card-info {
@@ -106,28 +110,25 @@
 .like-btn, .wtchl-btn {
   border: none;
   cursor: pointer;
-  font-size: 30px;
-  background-color: transparent;
-  color: rgb(245, 248, 247);
-}
-
-.wtchl-btn {
   font-size: 25px;
+  background-color: transparent;
+  color: #3700a6;
 }
 
 .card-button {
   display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   margin-top: auto;
   top: 0;
-  padding: 5px;
+  padding: 3px;
   position: absolute;
-  width: 85%;
+  width: 90%;
   z-index: 1;
+  text-decoration: solid;
 }
 
 .liked-items {
-  position: absolute;
+  position: fixed;
   background-color: rgba(255, 255, 255, 0.8); /* transparency */
   padding: 20px;
   border: none;
@@ -140,14 +141,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   right: 0;
-}
-
-.liked-items h2 {
-  margin-bottom: 10px;
-}
-
-.liked-items ul {
-  padding: 10;
+  margin-top: 60px;
 }
 
 .liked-items li {
@@ -166,3 +160,52 @@
 .liked-items button:hover {
   background-color:#7c0935;
 }
+
+.watchlist-dropdown {
+  margin-top: 60px;
+  position: fixed;
+  background-color: rgba(255, 255, 255, 0.8); /* transparency */
+  padding: 20px;
+  border: none;
+  width: 97%;
+  margin-right: 45px;
+  z-index: 2;
+  border-radius: 15px;
+  left: 0;
+  display:flexbox;
+  flex-wrap: wrap;
+  flex-direction: row;
+  right: 0;
+}
+
+.watchlist-dropdown li {
+  margin-bottom: 10px;
+}
+
+.watchlist-dropdown button {
+  color: rgb(9, 9, 9);
+  border: none;
+  padding: 3px 7px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 7px;
+}
+
+.watchlist-dropdown button:hover {
+  background-color:#7c0935;
+}
+
+.trailer-btn {
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+  background-color: #3700a6;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+}
+
+.trailer-btn:hover {
+  background-color: #7c0935;
+}
+
